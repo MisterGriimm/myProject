@@ -3,4 +3,9 @@ document.onreadystatechange = () => {
     element.onclick = function (e) {
         element.style.backgroundColor = "red"
     }
+    
+    element.onkeydown = function (e) {
+        element.style.backgroundColor = "red"
+    }
+
 }
