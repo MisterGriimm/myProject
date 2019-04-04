@@ -6,7 +6,14 @@
     <title>My Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/bootstrap.min.css"
+    />
     <script src="main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -20,8 +27,29 @@
             This is some text
         </div>
     </div> -->
+    <div class="container">
+      <div id="table">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody id="dataPersons">
+            <tr>
+              <th scope="row">vdsfdsffds</th>
+              <td>dfdfgff</td>
+              <td>fgfg</td>
+              <td>fdgdfgf</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <div class="flexCenter">
-    
       <img
         id="myRocket"
         class="rocketPos"
@@ -30,13 +58,11 @@
         width="80px"
         height="110px"
       />
-      <div 
+      <div
         id="bullet"
         class="rocketPos"
         style="background-color:black; width: 10px; height: 10px;display: none;"
-        >
-
-      </div>
+      ></div>
     </div>
   </body>
 </html>

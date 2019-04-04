@@ -53,4 +53,49 @@ document.onreadystatechange = () => {
     }
     console.log(e.keyCode);
   };
+  var persons = [
+    {
+      name: "Liam",
+      first: "some info",
+      final: "stuff",
+      extra: "other things"
+    },
+    {
+      name: "Andres",
+      first: "more info",
+      final: "stuff2",
+      extra: "other things2"
+    }
+  ];
+  var htmlString = "";
+  
+  persons.map((person)=>{
+    htmlString += `
+    <tr>
+      <td>
+        ${person.name}
+      </td>
+      <td>
+        ${person.first}
+      </td>
+      <td>
+        ${person.final}
+      </td>
+      <td>
+        ${person.extra}
+      </td>
+    </tr>
+    `;
+  })
+  
+  var dataPersons = document.getElementById("dataPersons");
+  /*   dataPersons.innerHTML = `
+    <tr>
+      <td>stuff1</td>
+      <td>stuff2</td>
+      <td>stuff3</td>
+      <td>stuff4</td>
+    </tr>
+`; */
+  dataPersons.innerHTML = htmlString;
 };
